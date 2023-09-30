@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="PLANA is the Social app for Social people, allowing consumers to plan social events of any scale with people around them. From plan inception and operation, to plan booking, plan execution and payment, PLANA brings together all the key elements of the social planning lifecycle into one, unique and harmonious platform.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="PLANA">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <meta http-equiv="Cross-Origin-Opener-Policy" content="allow-popups"/>
+  <!-- <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin" /> -->
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <title>Plana</title>
+  <link rel="manifest" href="manifest.json">
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "firebase/app";
+    import { getAnalytics } from "firebase/analytics";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyAuDlHtyvn5oaYDXuzBHnx9CvmTz2QETCQ",
+      authDomain: "plana-website.firebaseapp.com",
+      projectId: "plana-website",
+      storageBucket: "plana-website.appspot.com",
+      messagingSenderId: "400875556704",
+      appId: "1:400875556704:web:a56f117d33525a4ee31805",
+      measurementId: "G-63BPGXFBJN"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+
+  <script>
+    // The value below is injected by flutter build, do not touch.
+    const serviceWorkerVersion = "1950584461";
+  </script>
+  <!-- This script adds the flutter initialization JS code -->
+  <script src="flutter.js" defer></script>
+</head>
+
+<body>
+  <style>
+    body {
+      background-color: #0a0a0a;
+      height: 100vh;
+      width: 100vw;
+      margin: 0px;
+    }
+
+    .main-content {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.4s ease-out;
+    }
+
+    .main-logo {
+      width: 10vw;
+    }
+  </style>
+  <script>
+    function delay(time) {
+      return new Promise(resolve => setTimeout(resolve, time));
+    }
+
+    window.addEventListener('load', function (ev) {
+      var loaderContent = document.querySelector('#loader-content');
+      // Download main.dart.js
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        },
+        onEntrypointLoaded: function (engineInitializer) {
+          engineInitializer.initializeEngine().then(async function (appRunner) {
+            loaderContent.style.opacity = "0";
+            await delay(400);
+            appRunner.runApp();
+          });
+        }
+      });
+    });
+
+
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flutter/2.10.2/flutter_web.js"></script>
+  <script>
+    if (window.flutterWebRenderer) {
+      window.addEventListener('flutter-first-frame', function () {
+        const flutterApp = document.getElementById('flutter-app');
+        const videoPlayerView = document.createElement('div');
+        videoPlayerView.id = 'video-player-view';
+        flutterApp.appendChild(videoPlayerView);
+        flutterApp.addEventListener('remove', function () {
+          videoPlayerView.remove();
+        });
+      });
+    }
+  </script>
+
+  <div class="main-content" id="loader-content">
+    <img class="main-logo" src="assets/userAppLogo.png" alt="PLANA" />
+  </div>
+</body>
+
+</html>
