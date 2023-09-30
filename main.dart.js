@@ -98759,7 +98759,7 @@ geE(){return"url"},
 gEX(){return"/"}}
 A.RM.prototype={
 G(a){var s=null,r=$.aVi(),q=t.z,p=A.r3(s,s,s,B.cL,B.cM,B.L,s,!1,s,!0,s,"/",!0,new A.aiX(),s,s,s,!0,!0,s,s,s,s,q),o=t.mR
-q=A.a([A.r3(s,s,A.aEe(new A.aiY(),t.J9),B.cL,B.cM,B.L,s,!1,s,!0,s,"/support",!0,new A.aiZ(),s,s,s,!0,!0,s,s,s,s,q),A.r3(s,s,s,B.cL,B.cM,B.L,s,!1,s,!0,s,"/privacyPolicy",!0,new A.aj_(),s,s,s,!0,!0,s,s,s,s,q),A.r3(s,s,s,B.cL,B.cM,B.L,s,!1,s,!0,s,"/PrivacyPolicy",!0,new A.aj0(),s,s,s,!0,!0,s,s,s,s,q),A.r3(s,s,s,B.cL,B.cM,B.L,s,!1,s,!0,s,"/tnc",!0,new A.aj1(),s,s,s,!0,!0,s,s,s,s,q),A.r3(s,s,A.aEe(new A.aj2(),o),B.cL,B.cM,B.L,s,!1,s,!0,s,"/deleteUser",!0,new A.aj3(),s,s,s,!0,!0,s,s,s,s,q),A.r3(s,s,A.aEe(new A.aj4(),o),B.cL,B.cM,B.L,s,!1,s,!0,s,"/deleteVendor",!0,new A.aj5(),s,s,s,!0,!0,s,s,s,s,q)],t.RT)
+q=A.a([A.r3(s,s,A.aEe(new A.aiY(),t.J9),B.cL,B.cM,B.L,s,!1,s,!0,s,"/support/",!0,new A.aiZ(),s,s,s,!0,!0,s,s,s,s,q),A.r3(s,s,s,B.cL,B.cM,B.L,s,!1,s,!0,s,"/privacyPolicy/",!0,new A.aj_(),s,s,s,!0,!0,s,s,s,s,q),A.r3(s,s,s,B.cL,B.cM,B.L,s,!1,s,!0,s,"/PrivacyPolicy/",!0,new A.aj0(),s,s,s,!0,!0,s,s,s,s,q),A.r3(s,s,s,B.cL,B.cM,B.L,s,!1,s,!0,s,"/tnc",!0,new A.aj1(),s,s,s,!0,!0,s,s,s,s,q),A.r3(s,s,A.aEe(new A.aj2(),o),B.cL,B.cM,B.L,s,!1,s,!0,s,"/deleteUser/",!0,new A.aj3(),s,s,s,!0,!0,s,s,s,s,q),A.r3(s,s,A.aEe(new A.aj4(),o),B.cL,B.cM,B.L,s,!1,s,!0,s,"/deleteVendor/",!0,new A.aj5(),s,s,s,!0,!0,s,s,s,s,q)],t.RT)
 r=new A.uE(new A.Cp(B.kR,new A.aj6(),"Plana | Social app for social people",r,B.A6,!1,q,p,s),s,s,s,!0,B.t,s,s,s,B.t,B.t,s)
 A.aSc(!0,"Animate.onPlay is not called when Animate.autoPlay=false")
 A.aSc(!0,"Animate.onInit is not called when used with Animate.controller")
